@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #111827;
+  --accent-color: #f59e0b;
+  --text-dark: #f3f4f6;
+  --text-light: #d1d5db;
+  --bg-light: #0b0f19;
+  --bg-white: #0a0b11;
+  --border-color: #22272f;
+}
+
+/* Ensure only one dark theme for app consistency */
+[data-theme='dark'],
+[data-theme='light'],
+body {
+  --text-dark: #f3f4f6;
+  --text-light: #d1d5db;
+  --bg-light: #0b0f19;
+  --bg-white: #0a0b11;
+  --border-color: #22272f;
+}
