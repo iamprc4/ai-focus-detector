@@ -1,0 +1,55 @@
+Backend Framework:
+
+Flask → lightweight web server
+Flask-CORS → allows frontend ↔ backend communication
+So your system is: “A REST API-based AI backend”
+
+
+Computer Vision is a field of AI that enables computers to understand and analyze images and videos, similar to how humans see.”
+
+Real examples:
+Face detection
+Object detection
+Emotion recognition
+
+
+OpenCV is an open-source computer vision library used for image and video processing.”
+
+What you used it for:
+Capturing frames
+Detecting faces
+Detecting eyes
+Drawing bounding boxes
+
+
+AI / ML Layer:
+Emotion Detection :Hugging Face Transformers: trpakov/vit-face-expression : Type: Vision Transformer (ViT) : classifies 7 emotions
+Face Detection : Haar Cascade Classifier: haarcascade_frontalface_default.xml
+gadget detection : OpenCV-based detection(in future, we can upgrade it using deep learning models like YOLO for better accuracy.)
+focus : Haar Cascade Eye Detection
+
+
+Deep Learning Engine:
+PyTorch (torch, torchvision)
+Used for : Running the transformer model,Handling inference
+
+
+Computer Vision Layer:
+Image Processing
+OpenCV (cv2)
+NumPy
+
+Used for : Frame processing,Face detection
+Image Handling:
+PIL (Pillow)
+Used for : Image conversion,Preprocessing
+
+
+Data Handling:
+Base64 encoding/decoding
+Because : Frontend sends image → backend decodes
+
+Base64 is a way of converting binary data like images into text format so it can be transmitted over the internet.
+
+alert System : winsound (beep alert)
+For : Security alert (second person etc.)
