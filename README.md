@@ -90,7 +90,26 @@ Open http://localhost:3001.
 - Input: 224x224 RGB
 
 ---
+# Project Details
 
+## Title:
+
+AI-Powered Behavior & Intrusion Detection System
+
+## Description:
+
+This project integrates multiple AI models to monitor user behavior through a webcam. It detects intrusion, device misuse, emotional state, and attention level in real time.
+
+## Modules:
+
+1. Face Detection – identifies number of people
+2. Emotion Detection – analyzes facial expressions
+3. Object Detection – detects mobile phones
+4. Focus Detection – checks attention level
+
+## Outcome:
+
+A real-time intelligent monitoring system that improves security and user engagement tracking.
 ---
 
  Use Cases
