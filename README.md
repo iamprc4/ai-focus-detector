@@ -1,157 +1,115 @@
-AI-Powered Behavior & Intrusion Detection System
- Problem Statement  
+# AI Behavior Intrusion Detection System
 
-In online exams, workplaces, and secure environments, monitoring user behavior is critical to prevent malpractice, distraction, and unauthorized access. Traditional systems lack real-time intelligence to detect such activities.
+## Overview:
 
----
-
-Objective
-
-To develop an AI-based system that:
-
-* Detects intrusion (multiple persons)
-* Identifies unauthorized device usage (mobile phones)
-* Monitors user focus and attention
-* Analyzes emotional state in real-time
+An AI-based system that detects user focus, intrusion, emotions, and gadget usage in real-time using computer vision and deep learning.
+Traditional CCTV systems lack real-time intelligent behavior analysis. This project presents an AI-based monitoring system that detects intrusion, user focus, gadgets (like mobile phones), and human emotions using computer vision and deep learning techniques. The system processes live video feeds and generates alerts to improve security and monitoring efficiency.
 
 ---
 
- Features
+## Features:
 
-*  Face Detection (Single vs Multiple Person)
-*  Mobile Detection (YOLO-based object detection)
-*  Emotion Detection (Vision Transformer model)
-*  Focus Tracking (Head pose / gaze detection)
-*  Real-time Alerts (Beep / warning system)
-
----
-
-Technologies Used
-
-* Python
-* OpenCV
-* Deep Learning Models:
-
-   Haar Cascade / MTCNN (Face Detection)
-  YOLO (Object Detection)
-  ViT (Emotion Detection)
-* NumPy
+* Real-time Intrusion Detection
+* Emotion Recognition (Happy, Sad, Neutral, etc.)
+* Gadget Detection (e.g., mobile phone usage)
+* User Focus Monitoring
+* Instant Alert System (for violations)
+* Live Video Processing using OpenCV
 
 ---
 
- System Architecture
+# Tech Stack:
 
-Camera Input
-→ Face Detection
-→ Emotion Detection
-→ Object Detection
-→ Behavior Analysis
-→ Alert System
+* **Programming Language:** Python
+* **Libraries & Frameworks:** OpenCV, NumPy, TensorFlow / Keras
+* **Concepts Used:** Computer Vision, Deep Learning, Image Processing
 
 ---
 
-Setup Instructions                                                                               
-1. Clone Repository - git clone https://github.com/iamprc4/ai-focus-detector
-2.Navigate to Folder - cd ai-focus-detector                                                                      
-3. Install Dependencies - pip install -r requirements.txt                                                      
-4. Run Project - python main.py
+# Installation:
 
----
+1. Clone the repository:
 
-## Run locally
-### Backend
 ```bash
-cd "ai-project/files"
-py -3.14 -m pip install -r requirements.txt
-py -3.14 app.py
+git clone https://github.com/YOUR-USERNAME/ai-behavior-intrusion-system.git
 ```
-Server: http://localhost:5000 (downloads ~350 MB model on first run).
 
-### Frontend (React)
+2. Navigate to the project folder:
+
 ```bash
-cd "files/reaact"
-$env:PORT=3001; npm install
-$env:PORT=3001; npm start
+cd ai-behavior-intrusion-system
 ```
-Open http://localhost:3001.
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## API
-- `POST /predict` with body `{ "image": "<base64-jpeg>" }` → returns `dominant`, `emotions[]`, optional `face_patch`, timing.
-- `GET /health` → `{ "status": "ok", "model": "trpakov/vit-face-expression" }`
+# How to Run:
+
+```bash
+python app.py
+```
+> Make sure your webcam is connected and permissions are enabled.
 
 ---
 
-## Model facts
-- Model: `trpakov/vit-face-expression`
-- Architecture: ViT-Base-Patch16-224
-- Classes: happy, sad, angry, fear, disgust, surprise, neutral
-- Input: 224x224 RGB
+# Project Structure:
+```
+ai-behavior-intrusion-system/
+│── app.py # Main execution file
+│── react/ # Frontend (if used)
+│── files/ # Supporting files
+│── index.html # Web interface
+│── image.png # Output screenshot
+│── requirements.txt # Dependencies
+│── README.md # Documentation
+```
 
 ---
-# Project Details
 
-## Title:
+# Output / Demo:
 
-AI-Powered Behavior & Intrusion Detection System
+![Output Screenshot](image.png)
+[Watch Demo](https://youtu.be/DP7YOpY0cC4)
 
-## Description:
+Example:
+* Intrusion detection alert
+* Emotion detection output
+* Gadget detection frame
 
-This project integrates multiple AI models to monitor user behavior through a webcam. It detects intrusion, device misuse, emotional state, and attention level in real time.
-
-## Modules:
-
-1. Face Detection – identifies number of people
-2. Emotion Detection – analyzes facial expressions
-3. Object Detection – detects mobile phones
-4. Focus Detection – checks attention level
-
-## Outcome:
-
-A real-time intelligent monitoring system that improves security and user engagement tracking.
 ---
 
- Use Cases
+# Use Cases:
 
-* Online Proctoring Systems
+* Smart Surveillance Systems
+* Examination Monitoring (anti-cheating system)
 * Workplace Monitoring
-* Security Surveillance
-* Smart Classrooms
+* Security in Restricted Areas
 
 ---
 
-Limitations
+# Future Improvements:
 
-* In low light or poor resolution, face and object detection may not perform optimally
-* real-time processing requires good computational resources
-* Depends on camera quality
-
----
-
- Future Scope
-
-* Cloud-based monitoring dashboard
-* Integrating this system with existing platforms like online exam portals or workplace tools can make it more practical and scalable.
-* Multi-camera integration
-* We can improve accuracy by using more advanced deep learning models and training on larger datasets
-* Improved accuracy using custom-trained models
-
-read Backend Framework.txt and Features.txt for Features, Limitations and Future Scope for more info
-
+* Improve model accuracy with advanced architectures
+* Add cloud-based alert system (SMS/Email)
+* Deploy as a web application
+* Multi-camera support
+* Face recognition for identity tracking
 
 ---
 
-Point of Contact
+# Contributors:
 
-Name: Pratithi Rani Chawla
-Email: [pratithi04rani@gmail.com](mailto:pratithi04rani@gmail.com)
-LinkedIn:  [https://www.linkedin.com/in/pratithi-chawla-90521a360/](https://www.linkedin.com/in/pratithi-chawla-90521a360/)
-
-
---- 
-
-
-<img width="760" height="891" alt="image" src="https://github.com/user-attachments/assets/a6db972e-8145-48fe-9438-e10d29e1d1c4" />
+* G.Medha Sri
+* Pratithi Rani Chawla
+* Kondapally Jayashankar
 
 ---
+
+# License:
+This project is for educational purposes.
+
